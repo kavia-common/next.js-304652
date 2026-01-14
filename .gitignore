@@ -1,39 +1,63 @@
-# build output
-dist
-.next
 
-# dependencies
-node_modules
-package-lock.json
-yarn.lock
-!/yarn.lock
-test/node_modules
+# Python ignorables
+logs/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# logs & pids
+pip-log.txt
+pip-delete-this-directory.txt
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+venv/
+.env
+.env.*
+
+# Ignore all directories containing pyvenv.cfg
+**/pyvenv.cfg
+**/*/pyvenv.cfg
+
+# Node.js ignorables
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnp/
+.pnp.js
+.env
+.env.test
+.cache/
+.next/
+.nuxt/
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/
+.file_activity_report.json
+*.db
+core.*
+.core
 *.log
-pids
-
-# coverage
-.nyc_output
-coverage
-
-# test output
-test/**/out*
-test/**/next-env.d.ts
-.DS_Store
-/e2e-tests
-
-# Editors
-**/.idea
-**/.#*
-
-# examples
-examples/**/out
-examples/**/.env*.local
-
-pr-stats.md
-test-timings.json
-
-# Vercel
-.vercel
-.now
+post_process_status.lock
