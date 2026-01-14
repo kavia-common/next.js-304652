@@ -37,3 +37,4 @@ test-timings.json
 # Vercel
 .vercel
 .now
+.file_activity_report.json
